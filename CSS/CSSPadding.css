@@ -1,0 +1,11 @@
+/* The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).
+
+So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.
+
+Use the box-sizing property to keep the width at 300px, no matter the amount of padding: */
+
+div {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}

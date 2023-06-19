@@ -1,0 +1,51 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+    background-image: url('computer.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* padding defines a space between the text and the border
+ The CSS margin property defines a margin (space) outside the border.*/
+h1{
+    color:aliceblue;
+    font-family: Verdana;
+    font-size: larger;
+    border: 2px solid powderblue;
+    padding: 10px;
+    margin: 100px;
+    
+}
+
+a:link, a:active{
+    padding: 15px 25px;
+    background-color: blueviolet;
+    text-align: center;
+    display: inline-block;
+}
+
+table, td, th, tr{
+    border: 4px solid black;
+    border-style: dashed;
+    color: blue;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+
+td:hover{
+    background-color: antiquewhite;
+}
+  

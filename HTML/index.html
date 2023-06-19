@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--*** NOTEWORTHY CONCEPTS NEEDED TO LEARN ***-->
+<!-- Attributes ( like href, rel, type ) are used to provide additional information about HTML elements.-->
+<html lang="en">
+    <head>
+        <!-- Viewport is used to make the visible area of a webpage fit any device's resolution -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="Khoa">
+        <meta name="description" content="abrupt things">
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <!-- <link> dùng để link đến các phần khác, chỉ nên dùng ở <head>-->
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <title> My very first web page.</title>
+    </head>
+
+    <body>
+        <h1>Hello World!</h1>
+        <p>This is my very first web page.</p>
+
+        <!-- this is how to reference to a link, target defines where to open the link, in the current tab or in new tab-->
+        <a href="google.com" style="color: aliceblue;" target="_blank" >This is a link, created by a tag</a>
+        <br>
+
+        <!-- Images are created by including <img> element, alt means when this image is broken, an alternative text will appear to convey the text meaning of the image -->
+        <a href="https://icdn.dantri.com.vn/thumb_w/680/2023/01/24/khoa-hocdocx-1674520013659.png" target="_blank" title="Magical image" >
+            <picture>
+                <source media="(min-width: 650px)" srcset="computer.jpg">
+                
+                <source media="(min-width: 480)" srcset="https://icdn.dantri.com.vn/thumb_w/680/2023/01/24/khoa-hocdocx-1674520013659.png">
+
+                <img src="https://icdn.dantri.com.vn/thumb_w/680/2023/01/24/khoa-hocdocx-1674520013659.png" alt="W3Schools.com" width="104" height="142">
+
+                <!-- element picture is used to make the image size fit the size of the window, the img element will be used when users browse unsupported browser -->
+            </picture>
+        </a>
+
+        <!-- note that <br> is an empty element without a closing tag -->
+        <p>This is a <br> paragraph with a line break.</p>
+
+        <!-- style attribute specifies the color of the texts-->
+        <p style="color: aqua; background-color: aqua; font-family: 'Courier New', Courier, monospace;">This is an aqua paragraph in an aqua background</p>
+
+        <!-- The title attribute defines some extra information about an element. -->
+        <p title="I'm a title attribute!" style="text-align: center;">Hover your mouse on me!</p>
+
+        <a href="#C4" > click here to jump to chapter 4</a>
+
+        <hr>
+
+        <pre>
+            I am pre tag
+
+            I preserves both spaces and line breaks
+
+            I can display a poem without using br tag
+
+            No more html
+        </pre>
+        <p>
+            <b>This text is bold</b>
+            <strong>This text is strong</strong>
+            <i>This text is italized</i>
+            <em>This text is emphasized</em>
+            <small>These are some smaller texts</small>
+        </p>
+
+        <p>Do not forget to buy <mark style="background-color: azure;">milk</mark> today.</p>
+        <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+        <p>This is <sub>subscripted</sub> text.</p>
+        <p>This is <sup>superscripted</sup> text.</p>
+
+        <p>Here is a blockquote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+
+        <p>Here is a shorter version of quotation</p>
+        <p><q>goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+        <!-- This is the usage of abbr tag, to explain the abbrevation-->
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+        <!--The HTML <address> tag defines the contact information for the author/owner of a document or an article. -->
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+            <a href="mailto:someone@example.com">Send email</a>
+        </address>
+
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+        <bdo dir="rtl">This text will be written from right to left</bdo>
+
+        <!-- id is used to bookmark the location of respective content-->
+        <h2 id="C4"> I'm chapter 4</h2>
+
+        <img src="computer.jpg" alt="Workplace" usemap="#workmap" title="click on computer, phone, and coffee">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+<table style="width:100%">
+    <tr>
+      <th colspan="2">Person 1</th>
+      <th>Person 2</th>
+    </tr>
+    <tr>
+      <td>Emil</td>
+      <td>Tobias</td>
+      <td>Linus</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>14</td>
+      <td>10</td>
+    </tr>
+  </table>
+
+    </body>
+</html>
+
+<!-- list:-> https://www.w3schools.com/html/html_lists.asp -->

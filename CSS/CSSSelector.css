@@ -1,0 +1,31 @@
+/* In this example only <p> elements with class="center" will be red and center-aligned: */
+p.center {
+  text-align: center;
+  color: red;
+}
+
+/* The universal selector (*) selects all HTML elements on the page. */
+* {
+  text-align: center;
+  color: blue;
+}
+
+/* It will be better to group the selectors, to minimize the code. */
+h1,
+h2,
+p {
+  text-align: center;
+  color: red;
+}
+
+/* ID */
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+/* class */
+.class {
+  text-align: center;
+  color: red;
+}
